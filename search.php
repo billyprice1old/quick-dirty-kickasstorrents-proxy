@@ -10,7 +10,7 @@ $searchString = preg_replace('#[^A-Za-z0-9 -]#', '', $_GET['search_string']);
 $searchString = str_replace(' ', '+', $searchString);
 
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, "http://kickass.to/usearch/$searchString/?field=seeders&sorder=desc");
+curl_setopt($curl, CURLOPT_URL, "https://kat.cr/usearch/$searchString/?field=seeders&sorder=desc");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($curl, CURLOPT_ENCODING, 'gzip');
 
